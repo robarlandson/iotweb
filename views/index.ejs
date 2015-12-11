@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <%= title %>
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!--<ul class="nav navbar-nav">
+          <li>
+            <a href="#">On</a>
+          </li>
+          <li>
+            <a href="#">Off</a>
+          </li>
+        </ul>-->
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="current-status" class="alert alert-danger">
+          Status
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="btn-group-vertical" role="group" aria-label="...">
+          <div id="turnOn" class="btn btn-lg btn-primary">Turn On</div>
+          <div id="turnOff" class="btn btn-lg btn-default">Turn Off</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='/javascripts/jquery.min.js'></script>
+  <script src='/javascripts/bootstrap.min.js'></script>
+  <script src='/javascripts/iot.js'></script>
+</body>
+
+</html>
